@@ -1,0 +1,211 @@
+<div class="container margin_60">
+				<div class="main_title">
+					<h2>Explore <span>OnA</span> Apartments</h2>
+					<p>
+						 Let us take you on a visual journey of our luxurious aparment!
+					</p>
+				</div>
+				<hr>
+	
+				<div id="gallery" class="final-tiles-gallery  effect-dezoom effect-fade-out caption-top social-icons-right">
+					<div class="ftg-filters">
+						<a href="#ftg-set-ftgall">All</a>
+						<a href="#ftg-set-rome">view1</a>
+						<a href="#ftg-set-milan">view2</a>
+						<a href="#ftg-set-florence">view3</a>
+					</div>
+					<div class="ftg-items">
+						<div class="tile ftg-set-rome">
+							<a class="tile-inner" data-title="Apartment" data-lightbox="gallery" href="img/onaimages/7.jpg">
+								<!-- <img class="item" width="250" height="150" src="data:img/onaimages/26.jpg" data-src="https://dummyimage.com/500x300/cccccc/fff"> -->
+								<img class="item" width="250" height="150" src="data:img/onaimages/26.jpg" data-src="img/onaimages/7.jpg">
+	
+								<span class='title'>Apartment</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-milan">
+							<a class="tile-inner" data-title="Living Room" data-lightbox="gallery" href="img/onaimages/parlor1.jpg">
+								<img class="item" src="img/onaimages/parlor1.jpg" data-src="img/onaimages/parlor1.jpg">
+								<span class='title'>Living Room </span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-rome ftg-set-milan">
+							<a class="tile-inner" data-title="Room One" data-lightbox="gallery" href="img/onaimages/10.jpg">
+								<img class="item" src="img/onaimages/10.jpg" data-src="img/onaimages/10.jpg">
+								<span class='title'>Room One</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-florence">
+							<a class="tile-inner" data-title="Dinning" data-lightbox="gallery" href="img/onaimages/12.jpg">
+								<img class="item" src="img/onaimages/12.jpg" data-src="img/onaimages/12.jpg">
+								<span class='title'>Dinning </span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-florence">
+							<a class="tile-inner" data-title="Room Two" data-lightbox="gallery" href="img/onaimages/24.jpg">
+								<img class="item" src="img/onaimages/24.jpg" data-src="img/onaimages/24.jpg">
+	
+								<span class='title'>Room Two</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-rome ftg-set-florence">
+							<a class="tile-inner" data-title="Living Room" data-lightbox="gallery" href="img/onaimages/14.jpg">
+								<img class="item" src="img/onaimages/14.jpg" data-src="img/onaimages/14.jpg">
+	
+								<span class='title'>Living Room</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-florence">
+							<a class="tile-inner" data-title="Room Three" data-lightbox="gallery" href="img/onaimages/15.jpg">
+								<img class="item" src="img/onaimages/15.jpg" data-src="img/onaimages/15.jpg">
+								<span class='title'>Room Three</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-rome">
+							<a class="tile-inner" data-title="Bathroom" data-lightbox="gallery" href="img/onaimages/23.jpg">
+								<img class="item" src="img/onaimages/23.jpg" data-src="img/onaimages/23.jpg">
+	
+								<span class='title'>Bathroom</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-rome">
+							<a class="tile-inner" data-title="Room Four" data-lightbox="gallery" href="img/onaimages/11.jpg">
+								<img class="item" src="img/onaimages/11.jpg" data-src="img/onaimages/11.jpg">
+	
+								<span class='title'>Room Four</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-milan">
+							<a class="tile-inner" data-title="Pool Table" data-lightbox="gallery" href="img/onaimages/6.jpg">
+								<img class="item" src="img/onaimages/6.jpg" data-src="img/onaimages/6.jpg">
+	
+								<span class='title'>Pool Table</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-rome ftg-set-florence">
+							<a class="tile-inner" data-title="Washroom" data-lightbox="gallery" href="img/onaimages/2.jpg">
+								<img class="item" src="img/onaimages/2.jpg" data-src="img/onaimages/2.jpg">
+								
+								<span class='title'>Washroom</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+						<div class="tile ftg-set-florence">
+							<a class="tile-inner" data-title="Outdoor Pool" data-lightbox="gallery" href="img/onaimages/pool.jpg">
+								<img class="item" src="img/onaimages/pool.jpg" data-src="img/onaimages/POOL.jpg">
+	
+								<span class='title'>Outdoor Pool</span>
+								<!-- <span class='subtitle'>Pellentesque ornare ornare</span> -->
+							</a>
+							<!-- <div class="ftg-social">
+								<a href="#" data-social="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" data-social="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" data-social="google-plus"><i class="fa fa-google"></i></a>
+								<a href="#" data-social="pinterest"><i class="fa fa-pinterest"></i></a>
+							</div> -->
+						</div>
+						<!-- End image -->
+	
+					</div>
+	
+				</div>
+			</div>
+			<!-- End container -->

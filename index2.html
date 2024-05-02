@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OnA Booking">
+	<meta name="author" content="Swift Tech Co.">
+	<title>OnA Booking</title>
+
+    <!-- Favicons-->
+	<link rel="shortcut icon" href="img/OnA Favicon.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- COMMON CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	
+	<!-- CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    #sign-in-dialog {
+        position: fixed;
+        top: 50%; /* Adjust this value to position the popup vertically */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* background-color: #fff; */
+        z-index: 9999;
+        width: 90%; /* Adjust the width as needed */
+        max-width: 400px; /* Adjust the maximum width as needed */
+        padding: 20px;
+        border-radius: 8px;
+        /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+    }
+</style>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <!-- Header================================================== -->
+    <header>
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6"><i class="icon-phone"></i><strong>0901 441 1111</strong></div>
+                    <div class="col-6">
+                        <ul id="top_links">
+                            <li class="submenu"><a href="#sign-in-dialog" class="show-submenu-mega" id="access_link">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div id="logo_home">
+                    	<h1><a href="index.html" title="OnA Booking">OnA Booking</a></h1>
+
+                    </div>
+                </div>
+                <nav class="col-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+
+                    <div class="main-menu">
+                        
+                        <div id="header_menu">
+                            <img src="img/OnA logo.png" width="160" height="34" alt="City tours">
+                        </div>
+
+
+
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        
+                        <ul>
+                            <li class="submenu">
+                                <a href="index.html" class="show-submenu">Home</a>
+
+                                
+                            </li>
+                            <li class="submenu">
+                                <a href="about.html" class="show-submenu">About</a>
+                            </li>
+                             <li class="submenu">
+                                <a href="grid_gallery_2.html" class="show-submenu">Gallery</a>
+                                
+                            </li>
+                            <li class="submenu">
+                                <a href="single_hotel.html" class="show-submenu">Reseervation</a>
+                                <!-- <ul>
+                                    <li><a href="all_transfer_list.html">Reservation System</a></li>
+                                    <li><a href="all_transfer_grid.html">Calendar Availability</a></li>
+
+                                </ul> -->
+                            </li>
+                              <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Dashboard<i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="admin.html">Guest</a></li>
+                                    <li><a href="admin.html">Admin</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="faq.html" class="show-submenu-mega">FAQ</a>
+                            </li>
+
+                            <li class="submenu">
+                                <a href="contact_us_2.html" class="show-submenu-mega">Contact Us</a>
+                              
+                            </li>   
+
+
+                            
+                            
+                        </ul>
+                        
+                    </div><!-- End main-menu -->
+
+                    
+                    
+                    <ul id="top_tools">
+                        <li>
+                          <a href="" id="login_link" class="show-submenu-mega">Login/signup <i class="icon_lock-open"></i></a>
+
+                            <!-- <a href="javascript:void(0);" class="search-overlay-menu-btn"><i class="icon_search"></i></a> -->
+                        </li>
+
+                      
+
+
+                        <li>
+                            <div class="dropdown dropdown-cart">
+                                <!-- <a href="#" data-bs-toggle="dropdown" class="cart_bt"><i class="icon_bag_alt"></i><strong>3</strong></a>
+
+                                <ul class="dropdown-menu" id="cart_items">
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                        <strong><a href="#">Louvre museum</a>1x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_2.jpg" alt="image"></div>
+                                        <strong><a href="#">Versailles tour</a>2x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div class="image"><img src="img/thumb_cart_3.jpg" alt="image"></div>
+                                        <strong><a href="#">Versailles tour</a>1x $36.00 </strong>
+                                        <a href="#" class="action"><i class="icon-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <div>Total: <span>$120.00</span></div>
+                                        <a href="cart.html" class="button_drop">Go to cart</a>
+                                        <a href="payment.html" class="button_drop outline">Check out</a>
+                                    </li>
+                                </ul> -->
+                                
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            
+        </div><!-- container -->
+    </header><!-- End Header -->
+	
+	<main>
+	<section class="header-video">
+  
+
+    <div id="hero_video">
+      <!-- <video autoplay muted loop>
+          <source src="../img/onaimages/Onavideo.mov" class="header-video--media" data-video-src="" data-teaser-source="video/Onavideo" data-provider="" data-video-width="854" data-video-height="480" type="video/quicktime">
+      </video> -->
+      
+     
+      <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+        <div class="intro_title">
+          <h3 class="animated fadeInDown">Luxry Shortlet Apartment</h3>
+          <p class="animated fadeInDown">Discover / Reserve / Relax</p>
+          <a href="contact_us_2.html" class="animated fadeInUp button_intro">Contact Us</a>
+          <a href="single_hotel.html" class="animated fadeInUp button_intro outline hidden-sm hidden-xs">Book Now</a>
+        </div>
+      </div>
+    </div>
+  
+
+		<!-- <div id="hero_video">
+		<img src="img/onaimages/Onavideo.MOV" alt="Image" class="header-video--media" data-video-src="" data-teaser-source="video/Onavideo" data-provider="" data-video-width="854" data-video-height="480">
+
+          <div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+            <div class="intro_title">
+              <h3 class="animated fadeInDown">Luxry Shortlet Apartment</h3>
+              <p class="animated fadeInDown">Discover / Reserve / Relax</p>
+              <a href="contact_us_2.html" class="animated fadeInUp button_intro">Contact Us</a>
+              <a href="single_hotel.html" class="animated fadeInUp button_intro outline hidden-sm hidden-xs">Book Now</a>
+            </div>
+          </div>
+		</div> -->
+		<img src="img/onaimages/Onavideo.MOV" alt="Image" class="header-video--media" data-video-src="" data-teaser-source="video/Onavideo" data-provider="" data-video-width="854" data-video-height="480">
+	</section>
+	<!-- End Header video -->
+
+
+      <div class="white_bg">
+        <div class="container margin_60">
+          <div class="main_title">
+            <h2>What <span>We</span> Offer</h2>
+            <p>
+                We offer a luxury living with our array of premium amenities and services.
+            </p>
+          </div>
+          <div class="row add_bottom_45">
+            <div class="col-lg-4 other_tours">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_1_icon-86"></i>Free Wifi<span
+                      class="other_tours_price"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_2_icon-110"></i>Swimming Pool<span
+                      class="other_tours_price"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_1_icon-59"></i>Complimentary
+                    Breakfast<span class="other_tours_price"></span
+                  ></a>
+                </li>
+               
+               
+              </ul>
+            </div>
+
+            <div class="col-lg-4 other_tours">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_2_icon-116"></i>Plasma TV<span
+                      class="other_tours_price"
+                    ></span
+                  ></a>
+                </li>
+               
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_1_icon-22"></i>Pet Allowed<span
+                      class="other_tours_price"
+                    ></span
+                  ></a>
+                </li>
+                
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_1_icon-27"></i>Parking<span
+                      class="other_tours_price"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-4 other_tours">
+              <ul>
+                
+                <li>
+                    <a href="#"
+                      ><i class="icon_set_1_icon-13"></i>Accessibility<span
+                        class="other_tours_price"
+                      ></span
+                    ></a>
+                  </li>
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_1_icon-41"></i>Secured Environment<span class="other_tours_price"></span
+                  ></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    ><i class="icon_set_2_icon-117"></i>Gym<span
+                      class="other_tours_price"
+                    ></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End row -->
+
+          <div class="banner colored">
+            <h4>Step Inside <span>Digital</span> Luxury:</h4>
+            <p>
+             Explore Our Gallery and Unveil Elegance Beyond Imagination. 
+            </p>
+            <a href="grid_gallery_2.html" class="btn_1 white">View Gallery</a>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+              <p>
+                <a href="#"
+                  ><img
+                    src="img/onaimages/6.JPG"
+                    alt="Pic"
+                    class="img-fluid rounded"
+                /></a>
+              </p>
+              <h4><span>Pool </span>Table</h4>
+              <p>
+                Dedicated game room with a high-quality pool table, perfect for entertaining friends or family.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <p>
+                <a href="#"
+                  ><img
+                    src="img/onaimages/pool.jpg"
+                    alt="Pic"
+                    class="img-fluid rounded"
+                /></a>
+              </p>
+              <h4><span>Swimming </span>Pool</h4>
+              <p>
+                Private outdoor pool for a refreshing dip, and lounging area for ultimate relaxation 
+                beautifully landscaped surroundings for a tranquil atmosphere.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <p>
+                <a href="#"
+                  ><img
+                    src="img/onaimages/9.JPG"
+                    alt="Pic"
+                    class="img-fluid rounded"
+                /></a>
+              </p>
+              <h4><span>Clothing </span>Armoire</h4>
+              <p>
+                Spacious wardrobe with ample storage for clothing and accessories thoughtfully designed interior with a focus on organization
+                and a blend of style.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+              <p>
+                <a href="#"
+                  ><img
+                    src="img/onaimages/12.JPG"
+                    alt="Pic"
+                    class="img-fluid rounded"
+                /></a>
+              </p>
+              <h4><span>Modern</span> Dining</h4>
+              <p>
+                Elevate your dining experience with our contemporary ambiance and gourmet delights. Modern Cuisine - bon appétit!
+              </p>
+            </div>
+          </div>
+          <!-- End row -->
+        </div>
+        <!-- End container -->
+      </div>
+      <!-- End white_bg -->
+<!-- 
+
+		<section class="promo_full">
+			<div class="promo_full_wp magnific">
+				<div>
+					<h3>BELONG ANYWHERE</h3>
+					<p>
+						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+					</p>
+					<a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y" class="video"><i class="icon-play-circled2-1"></i></a>
+				</div>
+			</div>
+		</section> -->
+		<!-- End section -->
+
+		<div class="container margin_60">
+
+			<div class="main_title">
+				<h2>Why <span>Choose </span> Us ?</h2>
+				<p>
+					We offer a world of luxury, security, and round-the-clock support for your ultimate getaway.
+				</p>
+			</div>
+
+			<div class="row">
+
+				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.2s">
+					<div class="feature_home">
+						<i class="icon_set_1_icon-41"></i>
+						<h3><span>Secured</span> Environment</h3>
+						<p>
+							Our priority is your safety and peace of mind. Enjoy a secure environment with top-notch security measures in place.
+						</p>
+						<!-- <a href="about.html" class="btn_1 outline">Read more</a> -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.4s">
+					<div class="feature_home">
+						<i class="icon_set_1_icon-3"></i>
+						<h3><span>Top </span> Attractions</h3>
+						<p>
+							Experience the best of Lekki, Lagos, right at your doorstep. Explore nearby attractions and immerse yourself in the vibrant local culture.
+						</p>
+						<!-- <a href="about.html" class="btn_1 outline">Read more</a> -->
+					</div>
+				</div>
+
+				<div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+					<div class="feature_home">
+						<i class="icon_set_1_icon-57"></i>
+						<h3><span>H24 </span> Support</h3>
+						<p>
+							Whether you need assistance or have inquiries, our support team is available 24/7 to ensure your stay is seamless and enjoyable.
+						</p>
+						<!-- <a href="about.html" class="btn_1 outline">Read more</a> -->
+					</div>
+				</div>
+
+			</div>
+			<!--End row -->
+
+			<hr>
+
+			<!-- <div class="row">
+				<div class="col-md-6">
+					<img src="img/laptop.png" alt="Laptop" class="img-fluid laptop">
+				</div>
+				<div class="col-md-6">
+					<h3><span>Get started</span> with CityTours</h3>
+					<p>
+						Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+					</p>
+					<ul class="list_order">
+						<li><span>1</span>Select your preferred tours</li>
+						<li><span>2</span>Purchase tickets and options</li>
+						<li><span>3</span>Pick them directly from your office</li>
+					</ul>
+					<a href="all_tour_list.html" class="btn_1">Start now</a>
+				</div>
+			</div> -->
+			<!-- End row -->
+        
+    	</div>
+		<!-- End container -->
+    </main>
+	<!-- End main -->
+        
+    <footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Need help?</h3>
+                    <a href="tel://+2349014411111" id="phone">0901 441 1111</a>
+                    <a href="mailto:reservation@onabooking.com" id="email_footer">reservation@onabooking.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <!-- <li><a href="" id="login_link">Login</a></li> -->
+                        <li><a href="#">Register</a></li>
+                         <li><a href="#">Terms and condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="#">Community blog</a></li>
+                        <li><a href="#">Tour guide</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                         <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Settings</h3>
+                    <div class="styled-select">
+                        <select name="lang" id="lang">
+                            <option value="English" selected>English</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="styled-select">
+                        <select name="currency" id="currency">
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="mailto:reservation@onabooking.com"><i class="icon-mail"></i></a></li>
+                            <li><a href="tel:+2349014411111"><i class="icon-phone"></i></a></li>
+                            <li><a href="https://www.instagram.com/onaapartments?igshid=YTQwZjQ0NmI0OA=="><i class="icon-instagram"></i></a></li>
+                        </ul>
+                        <p>© OnA Booking 2023</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	<!-- Search Menu -->
+	<div class="search-overlay-menu">
+		<span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+		<form role="search" id="searchform" method="get">
+			<input value="" name="q" type="text" placeholder="Search..." />
+			<button type="submit"><i class="icon_set_1_icon-78"></i>
+			</button>
+		</form>
+	</div><!-- End Search Menu -->
+	
+
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	<!-- Search Menu -->
+	<div class="search-overlay-menu">
+		<span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+		<form role="search" id="searchform" method="get">
+			<input value="" name="q" type="text" placeholder="Search..." />
+			<button type="submit"><i class="icon_set_1_icon-78"></i>
+			</button>
+		</form>
+	</div><!-- End Search Menu -->
+	
+	<!-- Sign In Popup -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="small-dialog-header">
+          <h3>Sign In</h3>
+        </div>
+        <div id="login_message"></div>
+		<form id="loginForm">
+			<div class="sign-in-wrapper">
+				<a href="#0" class="social_bt facebook">Login with Facebook</a>
+				<a href="#0" class="social_bt google">Login with Google</a>
+				<div class="divider"><span>Or</span></div>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" name="email" id="login_email">
+					<i class="icon_mail_alt"></i>
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password" id="login_password" value="">
+					<i class="icon_lock_alt"></i>
+				</div>
+				<div class="clearfix add_bottom_15">
+					<div class="checkboxes float-start">
+						<label class="container_check">Remember me
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+					</div>
+					<div class="float-end"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+				</div>
+				<div class="text-center">
+                    <button type="submit" class="btn_login" id="login_submit">Log In</button>
+                </div>
+				<div class="text-center">
+					Don’t have an account? <a href="register.html">Sign up</a>
+				</div>
+				<!-- <div id="forgot_pw">
+					<div class="form-group">
+						<label>Please confirm login email below</label>
+						<input type="email" class="form-control" name="email_forgot" id="email_forgot">
+						<i class="icon_mail_alt"></i>
+					</div>
+					<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
+					<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+				</div> -->
+			</div>
+		</form>
+		<!--form -->
+	</div>
+	<!-- /Sign In Popup -->
+  <script>
+    $(document).ready(function() {
+        // When the "Login" link is clicked
+        $('#login_link').click(function(e) {
+            e.preventDefault(); // Prevent default link behavior
+            $('#sign-in-dialog').addClass('mfp-ready').removeClass('mfp-hide'); // Show the sign-in popup
+        });
+    });
+</script>
+
+	<!-- Common scripts -->
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/common_scripts_min.js"></script>
+	<script src="js/functions.js"></script>
+    <script src="./js/render_sign_in.js"></script>
+
+    <!-- API -->
+    <script src="./api/login.js"></script>
+
+	<!-- Video header scripts -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/video_header.js"></script>
+	<script>
+        HeaderVideo.init({
+            container: $('.header-video'),
+            header: $('.header-video--media'),
+            videoTrigger: $("#video-trigger"),
+            autoPlayVideo: false
+        });
+    </script>
+
+  </body>
+</html>
